@@ -1,0 +1,22 @@
+import 'dart:developer';
+
+import 'package:equatable/equatable.dart';
+import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
+
+part 'counter_state.dart';
+
+class CounterCubit extends Cubit<CounterState> {
+  CounterCubit() : super(CounterInitial());
+
+  static CounterCubit get(BuildContext context) => BlocProvider.of(context);
+
+  int counter = 0;
+
+  void increament(){
+    counter++;
+    log(counter.toString());
+    emit(IncreamentCounter(counter));
+
+  }
+}
