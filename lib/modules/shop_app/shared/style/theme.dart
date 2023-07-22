@@ -9,20 +9,20 @@ ThemeData lightTheme = ThemeData(
     elevation: 0,
   ),
   textTheme: const TextTheme(
-    bodyText1: TextStyle(
+    bodyLarge: TextStyle(
       color: Colors.black,
     ),
-    headline4: TextStyle(
+    headlineMedium: TextStyle(
       color: Colors.black,
     ),
   ),
 );
 ThemeData darkTheme = ThemeData(
   textTheme: const TextTheme(
-    bodyText1: TextStyle(
+    bodyLarge: TextStyle(
       color: Colors.white,
     ),
-    headline4: TextStyle(
+    headlineMedium: TextStyle(
       color: Colors.white,
     ),
   ),

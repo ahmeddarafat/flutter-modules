@@ -1,9 +1,6 @@
 // import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:flutter_modules/modules/counter_with_cubit/counter_page.dart';
-import 'package:flutter_modules/modules/counter_with_cubit/cubit/counter_cubit.dart';
-import 'package:flutter_modules/modules/iam_rich/the_screen.dart';
+import 'package:flutter_modules/modules/pagination/pagination_page.dart';
 
 import 'modules/iam_rich/screen1.dart';
 import 'modules/iam_rich/screen2.dart';
@@ -29,7 +26,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: const CounterPage(title: 'counter'),
+      home: const PaginationPage(),
       routes: {
         '/x1': (context) => const Screen1(),
         '/x2': (context) => const Screen2(),
