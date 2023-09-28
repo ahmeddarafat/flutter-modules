@@ -13,6 +13,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:flutter_modules/modules/go_router/app/go_router_app.dart';
 import 'package:flutter_modules/modules/payment/payment_register_page.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
@@ -32,7 +33,7 @@ void main() async {
   // if (Platform.isMacOS || Platform.isLinux || Platform.isMacOS) {
   //   DesktopWindow.setMinWindowSize(const Size(650, 650));
   // }
-  runApp(const MyApp());
+  runApp(const GoRouterApp());
 }
 
 class MyApp extends StatelessWidget {

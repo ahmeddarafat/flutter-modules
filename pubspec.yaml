@@ -28,6 +28,7 @@ environment:
 # the latest version available on pub.dev. To see which dependencies have newer
 # versions available, run `flutter pub outdated`.
 dependencies:
+  go_router: ^11.1.1
   cupertino_icons: ^1.0.2
   desktop_window: ^0.4.0
   dio: ^5.3.0
