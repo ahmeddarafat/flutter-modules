@@ -22,18 +22,13 @@ class FirstPage extends StatelessWidget {
             ElevatedButton(
               onPressed: () => {
                 context.go("/first/second"),
-                // GoRouter.of(context).pushNamed("Second Page"),
-                // GoRouter.of(context).push("/first/second"),
+                GoRouter.of(context).goNamed("Second Page"),
+                GoRouter.of(context).go("/first/second"),
 
-                // GoRouter.of(context).pushReplacementNamed("Second Page"),
-                // GoRouter.of(context).pushReplacement("/first/second"),
+                // short hand
+                context.goNamed("Second Page"),
+                context.go("/first/second"),
 
-                // // short hand
-                // context.pushNamed("Second Page"),
-                // context.push("/first/second"),
-
-                // context.pushReplacementNamed("Second Page"),
-                // context.pushReplacement("/first/second"),
               },
               child: const Text("go second"),
             ),

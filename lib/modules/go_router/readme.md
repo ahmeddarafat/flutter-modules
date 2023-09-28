@@ -60,18 +60,12 @@
     - It's like push in normal navigator
 
     ```dart
-    GoRouter.of(context).pushNamed("Second Page"),
-    GoRouter.of(context).push("/first/second"),
-  
-    GoRouter.of(context).pushReplacementNamed("Second Page"),
-    GoRouter.of(context).pushReplacement("/first/second"),
-  
+    GoRouter.of(context).goNamed("Second Page"),
+    GoRouter.of(context).go("/first/second"),
+    
     // short hand
-    context.pushNamed("Second Page"),
-    context.push("/first/second"),
-  
-    context.pushReplacementNamed("Second Page"),
-    context.pushReplacement("/first/second"),
+    context.goNamed("Second Page"),
+    context.go("/first/second"),
     ```
 
 2. Pop:
