@@ -17,6 +17,7 @@ class CounterCubit extends Cubit<CounterState> {
     counter++;
     log(counter.toString());
     emit(IncreamentCounter(counter));
+    
 
   }
 }
