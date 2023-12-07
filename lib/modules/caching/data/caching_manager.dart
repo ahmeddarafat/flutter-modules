@@ -7,7 +7,7 @@ class CacheKeys {
 }
 
 class CacheManager {
-  // singleton
+  /// singleton
   CacheManager._internal();
   static final CacheManager _instance = CacheManager._internal();
   factory CacheManager() => _instance;
