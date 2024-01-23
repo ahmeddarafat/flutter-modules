@@ -1,4 +1,4 @@
-import 'package:flutter_modules/modules/testing/view_model/favorite.dart';
+import 'package:flutter_modules/modules/testing/features/favorite_colors/view_model/favorite.dart';
 import 'package:test/test.dart';
 
 void main() {
