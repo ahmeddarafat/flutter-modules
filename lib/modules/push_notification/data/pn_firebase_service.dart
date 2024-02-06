@@ -28,9 +28,10 @@ class PNFirebaseService {
   );
 
   /// And add this in AndroidManifest.xml
+  
   // <meta-data
-  // android:name = "com.google.firebase.messaging.default_notification_channel_id"
-  // android:id = "high_important_channel"/>
+  //     android:name = "com.google.firebase.messaging.default_notification_channel_id"
+  //     android:value = "high_important_channel"/>
 
   final _localNotification = FlutterLocalNotificationsPlugin();
 
